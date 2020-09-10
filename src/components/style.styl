@@ -1,0 +1,60 @@
+@import "../../node_modules/kouto-swiss"
+@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
+
+TEXT_COLOR = #C7C5C3
+LIGHT_BG = #C4C4C4
+
+
+normalize()
+
+font-face("Source Sans Pro", "./fonts/SourceSansPro-B", bold, formats: ttf)
+font-face("Source Sans Pro", "./fonts/SourceSansPro-EL", 100, formats: ttf)
+font-face("Source Sans Pro", "./fonts/SourceSansPro-l", 200, formats: ttf)
+font-face("Source Sans Pro", "./fonts/SourceSansPro-R", 400, formats: ttf)
+
+
+body
+    font-family: 'Source Sans Pro'
+    color: #DBDBDB
+    background-color: #000
+    width: 100%
+    min-width: 320px
+    user-select: none
+
+h1
+    font-style: normal
+    font-weight: 200
+    font-size: 4.2vw
+    line-height: 113px
+    padding-top: 4vh
+
+:active, :hover, :focus 
+    outline: 0
+    outline-offset: 0
+
+
+pxsize_font = 13.255px
+pxsize_lineheigth = 13.788px
+
+main
+    width: 100%
+
+p
+    font-style: normal
+    font-weight: 100
+    font-size: "calc(%s + 0.7vw)"% pxsize_font
+    // font-size: 5vh
+    line-height: "calc(%s + 1.1068vw)"% pxsize_lineheigth
+    letter-spacing: 0.025em
+
+    max-width: 50vw
+    color: TEXT_COLOR
+    margin: 0
+
+h2
+    padding-top: 10vh
+    margin: 0
+    font-size: 4.2vw
+    font-weight: 200
+    color: #f2f2f2
